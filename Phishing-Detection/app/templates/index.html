@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bd">
+
+    <div>
+        <form id="f1" action="{{links.predict}}" method="post">
+            <h2>Predictive analysis</h2>
+            <h3>time_domain_activation</h3>
+            <input id="inp" name="time_domain_activation" type="number ">
+            <h3>qty_questionmark_file</h3>
+            <input id="inp" name="qty_questionmark_file" type="number ">
+            <h3>qty_slash_file</h3>
+            <input id="inp" name="qty_slash_file" type="number ">
+            <h3>qty_questionmark_directory</h3>
+            <input id="inp" name="qty_questionmark_directory" type="number ">
+            <h3>qty_hashtag_directory</h3>
+            <input id="inp" name="qty_hashtag_directory" type="number ">
+            <h3>qty_dollar_file</h3>
+            <input id="inp" name="qty_dollar_file" type="number ">
+            <h3>qty_slash_directory</h3>
+            <input id="inp" name="qty_slash_directory" type="number ">
+            <h3>qty_slash_url</h3>
+            <input id="inp" name="qty_slash_url" type="number ">
+            <h3>qty_hashtag_file</h3>
+            <input id="inp" name="qty_hashtag_file" type="number ">
+            <h3>directory_length</h3>
+            <input id="inp" name="directory_length" type="number ">
+            
+            <br><br><button id="sub" type="submit ">PREDICT</button>
+            <br>
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        #bd{
+            background-color: white;
+            text-align: center;
+            padding: 0px;
+            height:100%
+            background-color: rgb(0, 191, 255) !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 60px;
+            border-color: black;
+            border-style: solid;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        
+        f1{
+          background-color: rgba(255,255, 255, 0.5);
+        }
+        
+        h3 {
+            color: black;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: green;
+        }
+        
+        #inp {
+            border-radius: 14px;
+            height: 25px;
+            width: 25%;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+    </style>
+</body>
+
+</html>
